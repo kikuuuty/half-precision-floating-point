@@ -7,14 +7,15 @@
 
 using half_t = unsigned short;
 
-namespace hpfp
-{
-    /** Converts IEEE754 to binary16 and returns it.
-     * @see https://github.com/openexr/openexr/blob/develop/IlmBase/Half/half.h
-     */
-    half_t floatToHalf(float f);
+namespace hpfp {
 
-    /** Converts binary16 to IEEE754 and returns it.
-     */
-    float halfToFloat(half_t f);
+/** Converts IEEE754 to binary16 and returns it.
+ * @see https://github.com/openexr/openexr/blob/develop/IlmBase/Half/half.h
+ */
+half_t floatToHalf(float f);
+
+/** Converts binary16 to IEEE754 and returns it.
+ */
+float halfToFloat(half_t f);
+
 }
